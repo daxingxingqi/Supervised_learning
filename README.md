@@ -94,18 +94,18 @@ NB：具体查看文档
 >机器器学习模型的目目标函数通常包含两项:损失函数 和正则项 ,分别度量量模型与训练数据的匹配程
 度(损失函数越小小越匹配)和对模型复杂度的“惩罚”(避免过拟合)
 
-<div align=center><img width="450" src=resource/linear_regression_objective_function.png></div>
+<div align=center><img width="550" src=resource/linear_regression_objective_function.png></div>
 
 **L2损失：**
-<div align=center><img width="450" src=resource/mean_squared_error.png></div>
+<div align=center><img width="350" src=resource/mean_squared_error.png></div>
 
 > 令残差r = y-f(x)表示模型预测值f(x)和真值y之间的差异，回归任务常用的损失函数是L2损失（least square）
 
-<div align=center><img width="450" src=resource/linear_regression_l2_loss.png></div>
+<div align=center><img width="550" src=resource/linear_regression_l2_loss.png></div>
 
 > 即残差的平方。所有样本的损失函数值被称为经验风险，表示模型与训练数据的拟合程度。当损失函数取L2损失时，所有样本的损失函数值之和称为残差平方和（residual sum of squares, RSS）:
 
-<div align=center><img width="450" src=resource/linear_regression_l2_loss_sum.png></div>
+<div align=center><img width="550" src=resource/linear_regression_l2_loss_sum.png></div>
 
 > L2损失在回归分析中很常用。但是L2损失对于离群点（outliers）敏感。离群点通常远离大部分数据，如果根据大部分数据（去除离群点）得到理想模型，则残差r = y-f(x)（预测值f(x)和真值y)的绝对值比较大（训练数据中有离群点）。也就是说，算法会根据大部分数据得到一个理想模型，但是用损失函数调优时会把模型调大。因为残差变大。因此，采用L2损失而得到的理想模型对于离群点敏感。
 
@@ -114,4 +114,4 @@ NB：具体查看文档
 
 > 当数据中存在离群点的时候，可采用L1损失，即残差r=y-f(x)的绝对值；
 
-<div align=center><img width="450" src=resource/linear_regression_l1_loss.png></div>
+<div align=center><img width="550" src=resource/linear_regression_l1_loss.png></div>
