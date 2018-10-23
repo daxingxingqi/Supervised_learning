@@ -51,6 +51,11 @@ NB:准确率不适用的情况-如下面，准确率达到99%，但是一个恶�
 
 **ROC曲线（Receiver Operating Characteristic）**
 
+ROC曲线主要关注TPrate和FPrate。
+
+- True positive Rate = True Posivives/All Posivives 在所有positive中分对了多少
+- False positive Rate = False Posivives/All Posivives 在所有negtive中分错了多少
+
 > <div align=center><img width="450" src=resource/roc1.png></div>
 > <div align=center><img width="450" src=resource/roc2.png></div>
 > <div align=center><img width="450" src=resource/roc3.png></div>
