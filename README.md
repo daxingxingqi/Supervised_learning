@@ -49,8 +49,9 @@ NB:准确率不适用的情况-如下面，准确率达到99%，但是一个恶�
 
 - β<1的时候查准率有更大影响；
 
-**ROC曲线（Receiver Operating Characteristic）
-- <div align=center><img width="450" src=resource/roc1.png></div>
-- <div align=center><img width="450" src=resource/roc2.png></div>
-- <div align=center><img width="450" src=resource/roc3.png></div>
-- <div align=center><img width="450" src=resource/roc4.png></div>
+**ROC曲线（Receiver Operating Characteristic）**
+
+> <div align=center><img width="450" src=resource/roc1.png></div>
+> <div align=center><img width="450" src=resource/roc2.png></div>
+> <div align=center><img width="450" src=resource/roc3.png></div>
+> <div align=center><img width="450" src=resource/roc4.png></div>
