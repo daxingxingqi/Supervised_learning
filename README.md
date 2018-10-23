@@ -97,6 +97,7 @@ NB：具体查看文档
 <div align=center><img width="550" src=resource/linear_regression_objective_function.png></div>
 
 **L2损失：**
+
 <div align=center><img width="350" src=resource/mean_squared_error.png></div>
 
 > 令残差r = y-f(x)表示模型预测值f(x)和真值y之间的差异，回归任务常用的损失函数是L2损失（least square）
@@ -110,8 +111,29 @@ NB：具体查看文档
 > L2损失在回归分析中很常用。但是L2损失对于离群点（outliers）敏感。离群点通常远离大部分数据，如果根据大部分数据（去除离群点）得到理想模型，则残差r = y-f(x)（预测值f(x)和真值y)的绝对值比较大（训练数据中有离群点）。也就是说，算法会根据大部分数据得到一个理想模型，但是用损失函数调优时会把模型调大。因为残差变大。因此，采用L2损失而得到的理想模型对于离群点敏感。
 
 **L1损失**
+
 <div align=center><img width="450" src=resource/mean_absolute_error.png></div>
 
 > 当数据中存在离群点的时候，可采用L1损失，即残差r=y-f(x)的绝对值；
 
 <div align=center><img width="550" src=resource/linear_regression_l1_loss.png></div>
+
+**L2正则:岭回归(Ridge Regression)**
+
+<div align=center><img width="550" src=resource/Ridge_Regression.png></div>
+
+其中 表示特征的维数, 为正则参数,控制正则惩罚的强度。
+
+**L1正则:Lasso**
+
+<div align=center><img width="550" src=resource/lasso.png></div>
+
+其中 为正则参数,控制正则惩罚的强度。当λ取合适值时,Lasso)的结果是稀疏的(w的某些元素
+系数为0),起到特征选择作用用。
+
+**优化求解**
+
+- 求解法
+
+- 梯度下降法：思考以下情形：如果你的数据十分庞大，两种方法的计算速度都将会很缓慢。线性回归的最佳方式是将数据拆分成很多小批次。每个批次都大概具有相同数量的数据点。然后使用每个批次更新权重。这种方法叫做小批次梯度下降法。
+
